@@ -19,25 +19,16 @@ MANAGERS = ADMINS
 
 
 DATABASES = {
-    # 'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        # 'NAME':  os.path.join(PROJECT_ROOT, "sqlite", "my.db"),                      # Or path to database file if using sqlite3.
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+         'NAME':  os.path.join(PROJECT_ROOT, "sqlite", "my.db"),                      # Or path to database file if using sqlite3.
         # # The following settings are not used with sqlite3:
         # 'USER': '',
         # 'PASSWORD': '',
         # 'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         # 'PORT': '',                      # Set to empty string for default.
-    # }
+     }
 
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': r'final_design',                      # Or path to database file if using sqlite3.
-        # The following settings are not used with sqlite3:
-        'USER': 'design',
-        'PASSWORD': 'design',
-        'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '5432',                      # Set to empty string for default.
-    }
 }
 
 
