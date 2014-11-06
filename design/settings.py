@@ -17,6 +17,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+INTERNAL_IPS = ('120.204.130.88',)
 
 DATABASES = {
      'default': {
@@ -112,6 +113,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -143,6 +145,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
+    'django.contrib.staticfiles',
+    'debug_toolbar',
 )
 
 # A sample logging configuration. The only tangible logging

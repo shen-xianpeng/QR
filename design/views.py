@@ -12,6 +12,7 @@ class IndexView(View):
     template_name = 'index.html'
 
     def get(self, request, *args, **kwargs):
+        print request
         tag_name = request.GET.get('tag', '')
         if tag_name:
             tag = get_object_or_404(Tag, name=tag_name)
